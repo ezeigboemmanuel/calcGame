@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#container{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    border: 1px solid black;
+}
+#upper-div{
+    width: 100vw;
+    height: 40vh;
+    background-color: white;
+    border-bottom: 1px solid black;
+    position: relative;
+}
+#lower-div{
+    width: 100vw;
+    height: 60vh;
+    background-color: white;
+    text-align: center;
+}
+
+#text-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 8px;
+}
+#display-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+#display{
+    font-size: 50px;
+}
+#time-div{
+    text-align: center;
+}
+#input{
+    outline: none;
+    width: 70%;
+    height: 50px;
+    margin: 20px 10px;
+    font-size: 20px;
+    padding: 0 0 0 10px;
+}
+#btn{
+    width: 20%;
+    height: 50px;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+}
+#btn:hover{
+    background-color: rgb(99, 96, 96);
+}
+
+pre{
+    font-weight: 900;
+    font-size: 16px;
+}
+#instruction{
+    width: 90%;
+    text-align: center;
+    margin-left: 20px;
+}
