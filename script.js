@@ -64,10 +64,13 @@ let btn = document.getElementById("btn");
 
 btn.addEventListener("click", () => {
     console.log(parseInt(input.value));
+
     check();
     input.value = "";
     start();
 })
+
+let show = document.getElementById("show");
 
 function check(){
     console.log("Result: " + result);
@@ -77,6 +80,8 @@ function check(){
         console.log("score: " + score)
         disScore.textContent = "Score: " + score;
         console.log("Winner");
+        show.innerHTML = "Correct: " + result;
+        show.style.color = "green";
         if(score > highScore){
             highScore = score;
         }
@@ -86,6 +91,9 @@ function check(){
         console.log("score: " + score)
         disScore.textContent = "Score: " + score;
         console.log("Lose");
+        show.innerHTML = "Wrong: " + result;
+        show.style.color = "red";
     }
 }
+
 
